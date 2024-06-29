@@ -6,7 +6,8 @@ import Section3 from "./Section3";
 function Home() {
   return (
     <>
-      <section className="w-[97%] lg:w-[83%] max-w-[1300px] px-1   mx-auto my-10">
+    {/* ----I ahve divide dthis into different section so that person viewing this can easily understand it------- */}
+      <section className="w-[97%] lg:w-[83%] max-w-[1300px] px-1   mx-auto my-10 ">
         {/* -----upto the big image-------- */}
         <Section1 />
         {/* -----the hola designers-------- */}

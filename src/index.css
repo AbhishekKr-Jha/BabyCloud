@@ -1,15 +1,15 @@
 @font-face {
   font-family: MS1;
-  src: url(./Utilities/Fonts/MonoSans.ttf);
+  src: url(./Utilities/Fonts/MonoSans.woff2);
 }
 
 @font-face {
   font-family: MS2;
-  src: url(./Utilities/Fonts/WFVisualSansRegularText.ttf);
+  src: url(./Utilities/Fonts/WFVisualSansRegularText.woff2);
 }
 @font-face {
   font-family: MS3;
-  src: url(./Utilities/Fonts/WFVisualSansSemiBold.ttf);
+  src: url(./Utilities/Fonts/WFVisualSansSemiBold.woff2);
 }
 
 * {
@@ -64,3 +64,4 @@ li {
 .font3 {
   font-family: MS3;
 }
+

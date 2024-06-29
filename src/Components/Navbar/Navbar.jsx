@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "../../Utilities/Hamburger/Menu";
+import ExtraHoverableMenu from "../SmallMiniComponents/ExtraHoverableMenu";
 
 function Navbar() {
   return (
@@ -17,52 +18,39 @@ function Navbar() {
           <li className="hidden lg:block  relative group">
             Find designers<i className="ri-arrow-down-s-line"></i>
             <div className="w-64 hidden h-0 group-hover:h-auto p-8 group-hover:flex flex-col gap-y-4 rounded-xl  opacity-0 group-hover:opacity-100  bg-white  border-[1px] border-[#6E6D7A] border-opacity-10 absolute -left-4 transition-all duration-700 ease-in-out">
-              <div className="-mt-2">
-                <p className="text-[15px] ">Designer search</p>
-                <p className="text-xs  font-normal text-[#6E6D7A]">
-                  Quickly find your next designer
-                </p>
-              </div>
-
-              <div className="">
-                <p className="text-[15px]">Post a job</p>
-                <p className="text-xs font-normal text-[#6E6D7A]">
-                  The #1 job board for design talent
-                </p>
-              </div>
+              {/* -------I have created a component for the dropdown options to make the  code more short and easily understandable--------- */}
+              <ExtraHoverableMenu
+                mainText="Designer search "
+                subText="   Quickly find your next designer "
+              />
+              <ExtraHoverableMenu
+                mainText="Post a job "
+                subText=" The #1 job board for design talent "
+              />
             </div>
           </li>
           <li className="hidden lg:block">Inspiration</li>
           <li className="hidden lg:block relative group/item">
             Courses<i className="ri-arrow-down-s-line"></i>
             <div className="w-72 hidden h-0 group-hover/item:h-auto p-8 group-hover/item:flex flex-col gap-y-4 rounded-xl  opacity-0 group-hover/item:opacity-100   bg-white border-[1px] border-[#6E6D7A] border-opacity-10 absolute -left-4 transition-all duration-700 ease-in-out">
-              <div className="">
-                <p className="text-[15px] ">UX Diploma</p>
-                <p className="text-xs  font-normal text-[#6E6D7A]">
-                  {" "}
-                  Learn UX design from scratch in 6 months
-                </p>
-              </div>
-
-              <div className="">
-                <p className="text-[15px]">UI Certificate</p>
-                <p className="text-xs font-normal text-[#6E6D7A]">
-                  12-week UI skill building for designers
-                </p>
-              </div>
+              <ExtraHoverableMenu
+                mainText="UX Diploma "
+                subText=" Learn UX design from scratch in 6 months "
+              />
+              <ExtraHoverableMenu
+                mainText="UI Certificate "
+                subText=" 12-week UI skill building for designers "
+              />
               <hr className="bg-#6E6D7A] h-[1px] border-[#6E6D7A]  border-opacity-30" />
-              <div className="">
-                <p className="text-[15px]">Live interactive workshops</p>
-                <p className="text-xs font-normal text-[#6E6D7A]">
-                  with design professionals
-                </p>
-              </div>
+              <ExtraHoverableMenu
+                mainText="Live interactive workshops "
+                subText="with design professionals"
+              />
             </div>
           </li>
           <li className="hidden lg:block">Jobs</li>
           <li className="hidden lg:block">Go Pro</li>
         </ul>
-        {/* lg:bg-[#FFFFFF] */}
         <ul className="flex justify-between items-center gap-x-3 lg:gap-x-6 font-medium ">
           <li className=" xl:px-5 py-2 flex   rounded-3xl  font-normal border-4 border-transparent xl:bg-[#F4F5FB] xl:hover:bg-white  xl:hover:border-[#FDBEC7] xl:hover:border-opacity-20 group">
             <i className="ri-search-line  text-xl lg:text-lg text-black lg:text-[#6E6D7A] "></i>

@@ -12,19 +12,19 @@ function Section3() {
       <div className="mt-8 lg:mt-40 w-full  flex flex-col items-center">
         <ul className=" mb-10 flex items-center text-base sm:text-[20px] gap-x-3 font-medium lg:hidden ">
           <li>
-            <i className="ri-heart-3-line p-[10px]  border-[1px] border-opacity-20 hover:border-opacity-25 border-[#6E6D7A]  rounded-full"></i>
+            <i className="ri-heart-3-line toolKit-Section3"></i>
           </li>
           <li>
-            <i className="ri-bookmark-line p-[10px] border-[1px] border-opacity-20 hover:border-opacity-25 border-[#6E6D7A]  rounded-full"></i>
+            <i className="ri-bookmark-line toolKit-Section3"></i>
           </li>
           <li>
-            <i className="ri-upload-2-line p-[10px]  border-[1px] border-opacity-20 hover:border-opacity-25 border-[#6E6D7A]  rounded-full"></i>
+            <i className="ri-upload-2-line  toolKit-Section3"></i>
           </li>
           <li>
-            <i className="ri-chat-3-line p-[10px]  border-[1px] border-opacity-20 hover:border-opacity-25 border-[#6E6D7A]  rounded-full"></i>
+            <i className="ri-chat-3-line toolKit-Section3"></i>
           </li>
           <li>
-            <i className="ri-information-line p-[10px]  border-[1px] border-opacity-20 hover:border-opacity-25 border-[#6E6D7A]  rounded-full"></i>
+            <i className="ri-information-line  toolKit-Section3"></i>
           </li>
         </ul>
         <div className="w-full flex items-center justify-between">

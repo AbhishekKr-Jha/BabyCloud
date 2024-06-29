@@ -1,4 +1,11 @@
 
 @tailwind base;
 @tailwind components;
+
+
+.toolKit-Section3{
+@apply p-[10px]  border-[1px] border-opacity-20 hover:border-opacity-25 border-[#6E6D7A]  rounded-full
+}
+
+
 @tailwind utilities;

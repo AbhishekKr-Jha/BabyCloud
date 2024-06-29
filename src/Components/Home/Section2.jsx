@@ -9,7 +9,7 @@ function Section2() {
         </h5>
         <p className="mb-8">
           Concept Design for a personal organizer and a tracker for all your
-          work (kinda like Notion :p )
+          work ( kinda like Notion :p )
         </p>
         <p className="mb-[105px]">
           Designed this as a 30-minute UI design challenge. Feel free to share

@@ -73,9 +73,11 @@ function Section1() {
         </div>
       </div>
 
-      <div className="w-full md:h-auto ">
+
+    <div className="w-full md:h-auto ">
         <img src={Main} className="my-8 w-full rounded-lg" alt="load..." />
       </div>
+  
     </>
   );
 }

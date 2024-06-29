@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import ExtraHoverableMenu from "../../Components/SmallMiniComponents/ExtraHoverableMenu";
 
 function NewMenuOption() {
   const isMenuVisible = useSelector((state) => state.menu.isMenuVisible);
@@ -8,7 +9,7 @@ function NewMenuOption() {
     <>
       <section
         id="newNav"
-        className={`py-[1px] px-9 w-full  h-[91.6vh] bg-red-900  absolute ${
+        className={`py-[1px] px-9 w-full  h-[91.6vh]   absolute ${
           !isMenuVisible ? " -left-full opacity-40" : "left-0 opacity-100  "
         }  top-[80px] bg-white  border-t-[1px]  border-[#6E6D7A] text-base md:text-[17px] transition-all duration-150 ease-linear`}
       >
@@ -19,24 +20,14 @@ function NewMenuOption() {
             </span>
 
             <div className="pl-7 space-y-4 border-l-[1px] border-[#6E6D7A] border-opacity-50">
-              <div className="">
-                <p className="text-[17px] md:text-lg hover:text-[#565564]">
-                  Designer search
-                </p>
-                <p className="text-xs md:text-sm font-normal text-[#6E6D7A]">
-                  {" "}
-                  Quickly find your next designer
-                </p>
-              </div>
-
-              <div className="">
-                <p className="text-[17px] md:text-lg hover:text-[#565564]">
-                  Post a job
-                </p>
-                <p className="text-xs md:text-sm font-normal text-[#6E6D7A]">
-                  The #1 job board for design talent
-                </p>
-              </div>
+              <ExtraHoverableMenu
+                mainText="Designer search "
+                subText="   Quickly find your next designer "
+              />
+              <ExtraHoverableMenu
+                mainText="Post a job "
+                subText=" The #1 job board for design talent "
+              />
             </div>
           </li>
           <li className="font-medium hover:text-[#565564]">Inspiration</li>
@@ -44,33 +35,18 @@ function NewMenuOption() {
             <span className="hover:text-[#565564]">Courses</span>
 
             <div className="pl-7 space-y-4 border-l-[1px] border-[#6E6D7A]  border-opacity-50">
-              <div className="">
-                <p className="text-[17px] md:text-lg hover:text-[#565564]">
-                  UX Diploma
-                </p>
-                <p className="text-xs md:text-sm font-normal text-[#6E6D7A]">
-                  {" "}
-                  Learn UX design from scratch in 6 months
-                </p>
-              </div>
-              <div className="">
-                <p className="text-[17px] md:text-lg hover:text-[#565564]">
-                  UI Certificate
-                </p>
-                <p className="text-xs md:text-sm font-normal text-[#6E6D7A]">
-                  {" "}
-                  12-week UI skill building for designers
-                </p>
-              </div>
-              <div className="">
-                <p className="text-[17px] md:text-lg hover:text-[#565564]">
-                  Live interactive workshops
-                </p>
-                <p className="text-xs md:text-sm font-normal text-[#6E6D7A]">
-                  {" "}
-                  with design professionals
-                </p>
-              </div>
+              <ExtraHoverableMenu
+                mainText="UX Diploma "
+                subText=" Learn UX design from scratch in 6 months "
+              />
+              <ExtraHoverableMenu
+                mainText="UI Certificate "
+                subText=" 12-week UI skill building for designers "
+              />
+              <ExtraHoverableMenu
+                mainText="Live interactive workshops "
+                subText="with design professionals"
+              />
             </div>
           </li>
           <li className="font-medium hover:text-[#565564]">Jobs</li>
