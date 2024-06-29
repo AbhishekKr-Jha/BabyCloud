@@ -1,0 +1,66 @@
+@font-face {
+  font-family: MS1;
+  src: url(./Utilities/Fonts/MonoSans.ttf);
+}
+
+@font-face {
+  font-family: MS2;
+  src: url(./Utilities/Fonts/WFVisualSansRegularText.ttf);
+}
+@font-face {
+  font-family: MS3;
+  src: url(./Utilities/Fonts/WFVisualSansSemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+li {
+  cursor: pointer;
+}
+/* -----------glowing ball animation---------------- */
+.pulse-ball {
+  border-radius: 100%;
+  box-shadow: 0 0 0 rgba(22, 245, 59, 0.7);
+  animation: pulse 2.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(22, 245, 59, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(101, 239, 124, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* -----------fonts---------------------- */
+.newFont {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font1 {
+  font-family: MS1;
+}
+
+.font2 {
+  font-family: MS2;
+}
+
+.font3 {
+  font-family: MS3;
+}
